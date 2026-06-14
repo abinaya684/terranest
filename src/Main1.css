@@ -1,9 +1,57 @@
+:root{
+    --primary-color:rgb(9, 69, 9);
+    --second-color:rgb(56, 130, 56);
+}
 .image-compo2{
     height: 75vh;
     width: 190vh;
    border: 1px solid black;
 }
-div{
+.image-container{
     box-sizing: border-box;
     padding: 0%;
+    position: relative;
+    display: inline-block;
+}
+.overlay-text1{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    color: var(--primary-color);
+}
+.overlay-text2{
+    position: absolute;
+    top: 38%;
+    left: 10%;
+    color: var(--primary-color);
+    font-size: 17px;
+}
+.overlay-button{
+    position: absolute;
+    top: 58%;
+    left: 18%;
+    
+}
+.button1{
+     border: 1px solid var(--second-color);
+    background-color: var(--primary-color);
+    height: 50px;
+    width: 130px;
+    color: white;
+}
+.button2{
+    color: var(--primary-color);
+    height: 50px;
+    width: 130px;
+    margin-left: 15px;
+    padding-left: 4px;
+    border: var(--primary-color) solid 1px;
+}
+.button1:hover{
+    color:var(--primary-color);
+    background-color: white;
+}
+.button2:hover{
+    color:white;
+    background-color: var(--primary-color);
 }
