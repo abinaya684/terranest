@@ -1,6 +1,7 @@
 .image-compo2{
     height: 75vh;
     width: 190vh;
+   border: 1px solid black;
 }
 div{
     box-sizing: border-box;

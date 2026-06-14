@@ -1,7 +1,6 @@
 import React from "react";
-import chatimage2 from "./ChatGPT Image Jun 14, 2026, 10_04_58 AM.png";
 import './Main1.css';
-
+import chatimage2 from './mypro1/src/ChatGPT Image Jun 14, 2026, 11_12_41 AM.png';
 const Main1=()=>{
     return(
         <div>
