@@ -1,7 +1,6 @@
 import React from "react";
 import './Main1.css';
 import chatimage2 from './ChatGPT Image Jun 14, 2026, 11_12_41 AM.png';
-import Shopbycatogary from "./Shopbycatogary";
 import {useNavigate} from "react-router-dom";
 const Main1=()=>{
     const navigate=useNavigate();
@@ -19,7 +18,7 @@ const Main1=()=>{
                         elevate your everyday life.</p>
                     </div>
                <div className="overlay-button">
-                <button className="button1"  onClick={()=>navigate("/Shopbycategory")}>Show By Catogery</button>
+                <button className="button1"  onClick={()=>navigate("/Shopbycategory")}>Show By Category</button>
                 <button className="button2">Explore Collections</button>
                </div>
                 

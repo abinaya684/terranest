@@ -10,8 +10,8 @@
     width: 50px;
     padding-top: 3px;
 }
-h1{
-   
+.terra-nest{
+     color: rgb(29, 108, 29);
     margin: 0;
    padding-right: 470px;
    padding-top: 16px;
@@ -39,6 +39,9 @@ ul{
 }
 li a{
     white-space: nowrap;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
 }
 
 

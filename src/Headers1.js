@@ -11,7 +11,7 @@ const Headers1=()=>{
      <div className="header" >
         <header>
             <img src={chatimage} className="image-compo"/>
-           <h1>TerraNest</h1>
+           <h1 className="terra-nest">TerraNest</h1>
            <ul>
             <li className="list-home">
                 <a href="./">Home</a>

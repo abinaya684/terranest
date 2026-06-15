@@ -16,8 +16,8 @@ const Footer1=()=>{
             boxSizing:"border-box",
         }}>
             <h3  style={{display:"flex",alignItems:"center",gap:"8px",whiteSpace:"nowrap",margin:0,marginLeft:"70px" }}><FaTruckFast />  Fast Delivery</h3>
-            <h3  style={{display:"flex",alignItems:"center",gap:"8px",whiteSpace:"nowrap",margin:0,marginLeft:"190px"}}><RiSecurePaymentFill /> 100% Secure Transactions </h3>
-             <h3  style={{display:"flex",alignItems:"center",gap:"8px",whiteSpace:"nowrap",margin:0,marginLeft:"190px"}}><PiRepeatBold /> Easy Returns </h3>       
+            <h3  style={{display:"flex",alignItems:"center",gap:"8px",whiteSpace:"nowrap",margin:0,marginLeft:"120px"}}><RiSecurePaymentFill /> 100% Secure Transactions </h3>
+             <h3  style={{display:"flex",alignItems:"center",gap:"8px",whiteSpace:"nowrap",margin:0,marginLeft:"120px"}}><PiRepeatBold /> Easy Returns </h3>       
         </div>
     );
 };

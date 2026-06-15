@@ -4,7 +4,7 @@ import Main1 from "./Main1";
 import Footer1 from "./Footer1";
 const Home=()=>{
 return(
-    <div>
+    <div style={{height:"100vh",width:"90vw", boxSizing:"border-box"}}>
         <Headers1 />
         <Main1 />
         <Footer1 />

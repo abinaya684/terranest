@@ -3,7 +3,7 @@
     --second-color:rgb(56, 130, 56);
 }
 .image-compo2{
-    height: 75vh;
+    height: 73vh;
     width: 190vh;
    border: 1px solid black;
 }
@@ -21,31 +21,33 @@
 }
 .overlay-text2{
     position: absolute;
-    top: 38%;
-    left: 10%;
+    top: 40%;
+    left: 11%;
     color: var(--primary-color);
     font-size: 17px;
 }
 .overlay-button{
     position: absolute;
     top: 58%;
-    left: 18%;
+    left: 16%;
     
 }
 .button1{
      border: 1px solid var(--second-color);
     background-color: var(--primary-color);
     height: 50px;
-    width: 130px;
+    width: 145px;
     color: white;
+    white-space: nowrap;
 }
 .button2{
     color: var(--primary-color);
     height: 50px;
-    width: 130px;
+    width: 145px;
     margin-left: 15px;
-    padding-left: 4px;
+    padding-left: 5px;
     border: var(--primary-color) solid 1px;
+    white-space: nowrap;
 }
 .button1:hover{
     color:var(--primary-color);
