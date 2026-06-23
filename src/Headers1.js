@@ -6,25 +6,44 @@ import { FaUser } from "react-icons/fa";
 import { FaRegHeart } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
 const Headers1=()=>{
+    const listanchor=[
+        {
+            id:1,
+            name:"Home",
+            lined:"false"
+        },
+        {
+            id:2,
+            name:"Product",
+            lined:"false"
+        },
+        {
+            id:3,
+            name:"About us",
+            lined:"false"
+        },
+        {
+            id:4,
+            name:"Contact",
+            lined:"false"
+        }
+    ];
     return(
         <div>
      <div className="header" >
         <header>
             <img src={chatimage} className="image-compo"/>
            <h1 className="terra-nest">TerraNest</h1>
-           <ul>
-            <li className="list-home">
-                <a href="./">Home</a>
-            </li>
-            <li>
-                <a href="./">Product</a>
-            </li>
-            <li>
-                <a href="./">About us</a>
-            </li>
-            <li>
-                <a href="./">contact</a>
-            </li>
+           
+            {listanchor.map( (list)=>(
+                <div>
+                    <ul>
+                        <li><a href="/">{list.name}</a></li>
+                    </ul>
+                </div>
+             ) )}
+            
+            <ul>
             <li>
                 <a href="./"><FaSearch /></a>
             </li>
