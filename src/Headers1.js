@@ -1,11 +1,13 @@
-import React from "react";
+import React,{useState} from "react";
 import chatimage from "./ChatGPT Image Jun 13, 2026, 02_30_30 PM.png";
 import './Headers1.css';
 import { FaSearch } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
 import { FaRegHeart } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
+import {Link} from "react-router-dom";
 const Headers1=()=>{
+    const [activeItem,setactiveItem]=useState("");
     const listanchor=[
         {
             id:1,
@@ -38,7 +40,12 @@ const Headers1=()=>{
             {listanchor.map( (list)=>(
                 <div>
                     <ul>
-                        <li><a href="/">{list.name}</a></li>
+                        <li><a href="/"
+                        className={activeItem===list.name?"underline-active":""}
+                        onClick={(e)=>{
+                            e.preventDefault();
+                            setactiveItem(list.name);
+                        }}>{list.name}</a></li>
                     </ul>
                 </div>
              ) )}
@@ -54,7 +61,7 @@ const Headers1=()=>{
                 <a href="./"><FaRegHeart /></a>
             </li>
             <li>
-                <a href="./"><FaShoppingCart /></a>
+                <Link to="./Cart"><FaShoppingCart /></Link>
             </li>
            </ul>
            
