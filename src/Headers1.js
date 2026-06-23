@@ -12,22 +12,26 @@ const Headers1=()=>{
         {
             id:1,
             name:"Home",
-            lined:"false"
+            lined:"false",
+            path:" "
         },
         {
             id:2,
             name:"Product",
-            lined:"false"
+            lined:"false",
+            path:"/product"
         },
         {
             id:3,
             name:"About us",
-            lined:"false"
+            lined:"false",
+            path:"About"
         },
         {
             id:4,
             name:"Contact",
-            lined:"false"
+            lined:"false",
+            path:"contact"
         }
     ];
     return(
@@ -40,12 +44,12 @@ const Headers1=()=>{
             {listanchor.map( (list)=>(
                 <div>
                     <ul>
-                        <li><a href="/"
+                        <li><Link to="./ {list.path}"
                         className={activeItem===list.name?"underline-active":""}
                         onClick={(e)=>{
                             e.preventDefault();
                             setactiveItem(list.name);
-                        }}>{list.name}</a></li>
+                        }}>{list.name}</Link></li>
                     </ul>
                 </div>
              ) )}

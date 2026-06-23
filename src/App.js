@@ -7,6 +7,7 @@ import Shopbycatogary from "./Shopbycategory";
 import Product from "./Product";
 import ProductDetails from "./ProductDetails";
 import Cart from "./Cart";
+import Headers1 from "./Headers1";
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
 
   return (
     <BrowserRouter>
+    
 
       <Routes>
 
@@ -32,7 +34,7 @@ function App() {
        
 
         <Route
-          path="/Product"element={<Product cart={cart} setCart={setCart} />}/>
+          path="/product"element={<Product cart={cart} setCart={setCart} />}/>
         
 
         <Route
