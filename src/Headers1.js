@@ -25,13 +25,13 @@ const Headers1=()=>{
             id:3,
             name:"About us",
             lined:"false",
-            path:"/About"
+            path:"/AboutUs"
         },
         {
             id:4,
             name:"Contact",
             lined:"false",
-            path:"/contact"
+            path:"/Contact"
         }
     ];
     return(
@@ -43,7 +43,7 @@ const Headers1=()=>{
            
             {listanchor.map( (list)=>(
                 <div>
-                    <ul>
+                    <ul className="side-menu">
                         <li><NavLink to={list.path}
                         className={({isActive})=>isActive?"underline-active":""}
                         >{list.name}</NavLink></li>

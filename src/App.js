@@ -8,6 +8,8 @@ import Product from "./Product";
 import ProductDetails from "./ProductDetails";
 import Cart from "./Cart";
 import Headers1 from "./Headers1";
+import AboutUs from "./AboutUs";
+import Contact from "./Contact";
 
 function App() {
 
@@ -36,6 +38,10 @@ function App() {
         <Route
           path="/product"element={<Product cart={cart} setCart={setCart} />}/>
         
+         <Route
+          path="/AboutUs" element={<AboutUs />}/>
+             <Route
+          path="/Contact" element={<Contact />}/>
 
         <Route
           path="/product/:id" element={<ProductDetails cart={cart} setCart={setCart}/>}/>
