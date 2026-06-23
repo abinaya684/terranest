@@ -5,6 +5,7 @@ import { FaSearch } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
 import { FaRegHeart } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
+import {Link} from "react-router-dom";
 const Headers1=()=>{
     return(
         <div>
@@ -17,7 +18,7 @@ const Headers1=()=>{
                 <a href="./">Home</a>
             </li>
             <li>
-                <a href="./">Product</a>
+                <Link to="./Product">Product</Link>
             </li>
             <li>
                 <a href="./">About us</a>
@@ -35,7 +36,7 @@ const Headers1=()=>{
                 <a href="./"><FaRegHeart /></a>
             </li>
             <li>
-                <a href="./"><FaShoppingCart /></a>
+                <Link to="./Cart"><FaShoppingCart /></Link>
             </li>
            </ul>
            

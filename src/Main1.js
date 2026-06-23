@@ -5,6 +5,7 @@ import {useNavigate} from "react-router-dom";
 const Main1=()=>{
     const navigate=useNavigate();
     return(
+        
         <div className="image-container"> 
             <main>
                 <img src={chatimage2} className="image-compo2"/>
